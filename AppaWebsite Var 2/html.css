@@ -1,0 +1,326 @@
+body {
+  font-family: "Outfit", sans-serif;
+  /* font-family: "Epilogue", sans-serif; */
+  line-height: 2;
+  color: var(--dark);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.display-4 {
+  color: var(--dark);
+}
+
+a {
+  color: var(--dark);
+  text-decoration: none;
+}
+
+.hero {
+  background-image: url(Images/AppaThing.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 2;
+}
+
+.BBCUE {
+  background-image: url(Images/parallax2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 2;
+}
+
+.BBCI {
+  background-image: url(Images/parallax3.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 2;
+}
+
+.hero::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.383);
+  z-index: -1;
+}
+
+.BBCUE::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.383);
+  z-index: -1;
+}
+
+.BBCI::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.383);
+  z-index: -1;
+}
+
+.navbar .logo {
+  width: 200px;
+}
+
+.navbar .nav-link {
+}
+
+.footerTitle {
+  margin-top: 20px;
+  margin-bottom: 20px; /* *same as margintop*/
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer {
+  background-color: white;
+  padding: 70px 0;
+}
+
+.footer-col {
+}
+
+.fot-container {
+  max-width: 1170px;
+  background-color: red;
+  margin: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+/* .row {
+  text-align: center;
+}
+
+.block {
+  display: inline-block;
+} */
+
+/* !------ */
+/* TODO: WAIT THIS IS NOT A TODO */
+
+/* .scrolling-wrapper {
+  overflow-x: auto;
+}
+
+.card-block {
+  height: 300px;
+  width: 300px;
+  background-color: #fff;
+  border: none;
+  background-position: center;
+  background-size: cover;
+  transition: all 0.2s ease-in-out !important;
+  border-radius: 24px;
+  color: black;
+  padding-right: 20px;
+}
+
+.card-block:hover {
+  transform: translateY(-5px);
+  box-shadow: none;
+  opacity: 0.9;
+}
+
+.card-1 {
+  background-color: #4158d0;
+}
+
+.card-2 {
+  background-color: #0093e9;
+}
+
+.card-3 {
+  background-color: #00dbde;
+}
+
+.card-4 {
+  background-color: #fbab7e;
+}
+
+.card-5 {
+  background-color: #85ffbd;
+}
+
+.card-6 {
+  background-color: #fa8bff;
+}
+
+.card-7 {
+  background-color: #fa8bff;
+}
+
+.card-8 {
+  background-color: #fbda61;
+}
+
+.card-9 {
+  background-color: #4158d0;
+}
+
+.card-10 {
+  background-color: #ff3cac;
+} */
+
+/* !------ */
+
+/* *  */
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {
+  margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+.card:hover {
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+/* *  */
+
+/* .cardStyle {
+  color: black;
+  background-color: black;
+} */
+
+/* .scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.scrolling-wrapper .card {
+  display: inline-block;
+}
+
+.card {
+} */
+
+section {
+  padding-top: 12px;
+  padding-bottom: 120px;
+}
+
+.col-img {
+  background-image: url(Images/Image.png);
+  background-repeat: no-repeat;
+  object-fit: contain;
+  object-position: 80% 20%; /* try 20px 10px */
+}
+
+.homeimgs {
+  /* width: 300px;
+  height: 300px; */
+  width: 25%;
+  height: 25%;
+  padding-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ! ICONS CSS */
+.IconStyle {
+  padding-top: 200px;
+}
+
+.iconbox {
+  font-size: 32px;
+}
+
+:root {
+  --primary: #0d6efd;
+  --dark: black;
+  --body: #888;
+  --box-shadow: 10px 10px 10px;
+}
+
+.btn-theme-2 {
+  box-shadow: 0 10px 20px 0px green;
+  margin: 0;
+  font-size: 16px;
+  text-transform: 500;
+  text-transform: capitalize;
+  background-color: green;
+  color: #ffffff;
+  padding: 8px 20px;
+  border-radius: 30px 0px 30px 30px;
+  transition: 0.5s ease;
+}
+
+.btn-theme-2:hover {
+  background-color: greenyellow;
+  color: #ffffff;
+  box-shadow: none;
+}
+
+/* .hero-banner {
+  width: 100%;
+  margin-top: 100px;
+}
+
+.hero-banner .image {
+  border-radius: 30px;
+}
+
+.hero-image {
+  width: 180%;
+  height: 180%;
+  border-radius: 40px 0px;
+  margin-top: 10px;
+} */
